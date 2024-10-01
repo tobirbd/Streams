@@ -16,4 +16,32 @@ public class Weapon {
         this.strength = strength;
         this.value = value;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public CombatType getCombatType() {
+        return combatType;
+    }
+
+    public DamageType getDamageType() {
+        return damageType;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getValue() {
+        return value;
+    }
 }

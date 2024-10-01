@@ -1,3 +1,3 @@
 public enum CombatType {
-    MELEE, RANGED, NONE
+    MELEE, RANGED, NONE, PIERCING
 }
