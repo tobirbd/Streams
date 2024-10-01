@@ -25,12 +25,15 @@ public class Main {
                 ))
                 .collect(Collectors.toList());
 
-        list.sort(new Comparator<Weapon>() {
-            @Override
-            public int compare(Weapon o1, Weapon o2) {
-                return Integer.compare(o1.getDamage(),o2.getDamage());
-            }
-        });
+        list.sort((w1, w2) -> Integer.compare(w1.getDamage(),w2.getDamage()));
 
+        list.forEach(System.out::println);
+        list.sort(Comparator.comparing(Weapon::getCombatType)
+                .thenComparing(Weapon::getDamageType)
+                .thenComparing(Weapon::getName)
+        );
+
+        System.out.println();
+        list.forEach(System.out::println);
     }
 }
